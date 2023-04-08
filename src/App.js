@@ -8,20 +8,21 @@ Redirect,
 } from "react-router-dom";
 
 // import Home component
-import Home from "./components/Home";
+import Home from "./Pages/Home";
 // import About component
-import About from "./components/About";
+import About from "./Pages/About";
 // import ContactUs component
-import ContactMe from "./components/ContactMe";
+import ContactMe from "./Pages/ContactMe";
 
-import Projects from "./components/Projects";
+import Projects from "./Pages/Projects";
 
-import SocialMedia from "./components/SocialMedia";
+import SocialMedia from "./Pages/SocialMedia";
 
 function App() {
 
 return (
 	<>
+	<div>
 	{/* This is the alias of BrowserRouter i.e. Router */}
 	<Router>
 		<Switch>
@@ -33,7 +34,7 @@ return (
 		{/* This route is for about component
 		with exact path "/about", in component
 		props we passes the imported component*/}
-		<Route key = "about" path="/about" component={About} />
+		<Route key = "about" exact path="/about" component={About} />
 			
 		{/* This route is for contactme component
 		with exact path "/contactme", in
@@ -44,12 +45,13 @@ return (
 		route endpoints then, redirect triggers
 		and redirects app to home component with to="/" */}
 
-    <Route key = "projects" path="/projects" component={Projects} />
-    <Route key = "socialmedia" path="/socialmedia" component={SocialMedia} />
+		<Route key = "projects" path="/projects" component={Projects} />
+		<Route key = "socialmedia" path="/socialmedia" component={SocialMedia} />
 
 		<Redirect to="/" />
 		</Switch>
 	</Router>
+	</div>
 	</>
 );
 }
