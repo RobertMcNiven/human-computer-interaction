@@ -3,7 +3,6 @@ import React from "react";
 // different end points.
 import { Link } from "react-router-dom";
 
-import ColorSchemesExample from "./Components/Navbar";
 
 const Home = () => {
 return (
