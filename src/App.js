@@ -19,7 +19,7 @@ import Projects from "./Pages/Projects";
 import SocialMedia from "./Pages/SocialMedia";
 
 
-import ColorSchemesExample from "./Pages/Components/Navbar";
+import NavBar from "./Pages/Components/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -30,7 +30,7 @@ function App() {
 return (
 	<>
 	<div>
-		<ColorSchemesExample />
+		<NavBar />
 	</div>
 	<div>
 	{/* This is the alias of BrowserRouter i.e. Router */}

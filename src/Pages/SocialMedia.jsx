@@ -1,9 +1,10 @@
 import React from "react";
+import LinkedInCard from "./Components/LinkedIn";
 
-const SocialMedia = () => {
+function SocialMedia () {
 return (
 	<div>
-	<h1>Social Media Page</h1>
+		<LinkedInCard />
 	</div>
 );
 };

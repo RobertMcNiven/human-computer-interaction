@@ -1,10 +1,11 @@
 import React from "react";
+import Resume from "./Components/ResumePDF";
 
 const About = () => {
 return (
 	<div>
-	<h1>About Page</h1>
-	</div>
+	  <Resume />
+    </div>
 );
 };
 
