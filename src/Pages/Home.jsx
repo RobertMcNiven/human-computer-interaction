@@ -3,8 +3,13 @@ import React from "react";
 // different end points.
 import { Link } from "react-router-dom";
 
+import ColorSchemesExample from "./Components/Navbar";
+
 const Home = () => {
 return (
+
+		
+
 	<div>
 	<h1>Home Page</h1>
 	<br />

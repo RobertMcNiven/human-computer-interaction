@@ -1,7 +1,7 @@
 import "./App.css";
 // importing components from react-router-dom package
 import {
-BrowserRouter as Router,
+HashRouter as Router,
 Switch,
 Route,
 Redirect,
@@ -18,10 +18,20 @@ import Projects from "./Pages/Projects";
 
 import SocialMedia from "./Pages/SocialMedia";
 
+
+import ColorSchemesExample from "./Pages/Components/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
 function App() {
 
 return (
 	<>
+	<div>
+		<ColorSchemesExample />
+	</div>
 	<div>
 	{/* This is the alias of BrowserRouter i.e. Router */}
 	<Router>
@@ -34,7 +44,7 @@ return (
 		{/* This route is for about component
 		with exact path "/about", in component
 		props we passes the imported component*/}
-		<Route key = "about" exact path="/about" component={About} />
+		<Route key = "about" path="/about" component={About} />
 			
 		{/* This route is for contactme component
 		with exact path "/contactme", in
